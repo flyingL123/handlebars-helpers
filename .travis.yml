@@ -5,10 +5,12 @@ os:
 language: node_js
 node_js:
   - node
+  - '9'
   - '8'
   - '7'
   - '6'
   - '5'
-before_script:
-  - npm install -g gulp-cli
-script: gulp
+  - '4'
+  - '0.12'
+allowed_failures:
+  node_js: '0.12'
